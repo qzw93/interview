@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="11.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>70</x>
+      <y>10</y>
+      <w>150</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Student 
+--
+-String firstName;
+-String lastName;
+--
++String getName();</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>880</x>
+      <y>10</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Stereotype&gt;&gt;
+Package::FatClass
+{Some Properties}
+--
+-id: Long {composite}
+_-ClassAttribute: Long_
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+-- Resp2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>350</x>
+      <y>30</y>
+      <w>120</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>StudentTest
+--
++testCreate();</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>20</x>
+      <y>110</y>
+      <w>260</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>CourseSession
+--
+-String department;
+-String number;
+-Date date;
+-ArrayList&lt;Student&gt; students
+--
+CourseSession(String,String,Date);
+--
+String getDepartment();
+String getNumber();
+int getNumberOfStudents();
+void enroll(Student);
+Student get(int);
+Date getStartDate();
+Date getEndDate();</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>330</x>
+      <y>150</y>
+      <w>230</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>CourseSessionTest
+--
+-CourseSession session;
+-Date startDate;
+--
++void setUp();
++void testCreate();
++void testEnrollStudents();
++void testCourseDates();
+-private createDate(int,int,int);</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>600</x>
+      <y>40</y>
+      <w>190</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>AllTests
+--
++public TestSuite suite();</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>20</x>
+      <y>370</y>
+      <w>270</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>Department
+--
+-String name;
+-ArrayList&lt;CourseSession&gt; sessions;
+--
+ Department(String);
++void enroll(CourseSession);
++String getDepartmentName();
++void setDepartmentName();
+Date getStartDate();
+Date getEndDate();
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>330</x>
+      <y>380</y>
+      <w>230</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>DepartmentTest
+--
+-Department department;
+-Date startDate;
+--
++void testDepartmentName();
++void testEnroll();
++void testEndDate();</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

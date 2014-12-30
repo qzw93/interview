@@ -1,0 +1,44 @@
+* Git
+  - remove any intermediate files before commit
+  - check out/ check in
+  - confict resolution
+  - traceback
+
+* Linux
+
+* Java
+  - Coding Style
+    + indent
+    + naming
+    + comments
+    + kiss for method
+  - Unit Test
+
+* Practice
+  - check out the dir "suda_animal" from the repository
+  - create a class animal:
+    + constructor: animal(string species, string name)
+    + methods: speak, move, set_color, set_gender, get_color, get_gender
+               get_name, get_species
+    + variables: species, name, color, gender
+  - create subclass for animal:
+    + dog
+      speak: print "name barks"
+      move:  print "name runs on four feet"
+    + cat
+      speak: print "name mews"
+      move:  print "name runs on four feet"
+    + duck
+      speak: print "name clucks"
+      move:  print "name swims"
+    + bird
+      speak: print "name chirps"
+      move:  print "name flies"
+  - create two instances of each animal in 'action_test.java'
+    and call their 'speak' and 'move' methods once for each
+    instance. Output the result in both stdout and a log file
+    under the 'output' dir.
+  - run the testbench
+  - modify dog.java by two people and check in to occur the conflict
+    situation, and resolve it.
+  - go back a revision on the repository.

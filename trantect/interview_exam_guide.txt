@@ -1,0 +1,48 @@
+Trantect Interview Exam
+v0.4
+by Yale Huang
+August 2012
+
+----
+
+Guides
+
+* Try your best to archieve as many requirements as possible in 30 mins
+* You can use any tool (Google, Wikipedia, etc.) or ask anybody(including phone call or asking the interviewer) for help
+* Don't leave the room during the exam
+* Don't send the source code or this document out of the room
+
+----
+
+Requirements
+
+1. Find interview_pairprogramming.zip at your desktop and unzip it
+
+2. Execute go.sh and redirect the output to a text file named output.txt. You will need to execute go.sh to validate the modified code of the following steps.
+
+3. Replace class Student's name attribute with firstName and lastName, while keeping the functionality of class method getName() 
+3.1. Define interface, including refining the constructor
+3.2. Write the test cases, and tune the existing ones if necessary
+3.3. Implement the functions	
+3.4. Run the test cases and tune the code until it passed the test
+
+4. Add a class named Department
+4.1. Define interface
+4.1.1. A name of String, and methods to set and get it
+4.1.2. An array of CourseSession, and a function to add new items into it
+4.1.3. A constructor, which
+4.1.3.1. accepts a parameter of String, named departmentName
+4.1.3.2. initializes the object with deparment name and an empty array of CourseSession
+4.1.4. Calculate Department's StartDate and EndDate
+4.2. Write the test case
+4.3. Implement the functions
+4.4. Run the test cases and tune the code until it passed the test
+
+5. Create relationship between Student and Department
+5.1. Define interface
+5.1.1. Student can join one department
+5.1.2. An interface to get Student's department name
+5.1.3. Calculate Student's StartDate and EndDate
+5.2. Write the test case
+5.3. Implement the functions
+5.4. Run the test cases and tune the code until it passed the test
